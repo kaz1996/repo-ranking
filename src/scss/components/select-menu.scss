@@ -1,0 +1,36 @@
+.select-menu {
+  width: 90vw;
+  height: 90vh;
+  font-weight: $bold;
+  overflow: hidden;
+  border: .2rem solid $color-dark-green;
+  border-radius: .5rem;
+  position: fixed;
+  top: 5%;
+  left: 0;
+  right: 0;
+  z-index: 200;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-light-green;
+    padding: 2rem 1rem;
+    border-radius: .5rem .5rem 0 0;
+  }
+
+  &__close-button {
+    @include button;
+    background-color: inherit;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .select-menu {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 70vh;
+  }
+}

@@ -1,0 +1,29 @@
+.page {
+  height: 100vh;
+  font-size: 1.6em;
+  background-color: $color-white-smoke;
+  font-family: $noto-sans-jp;
+  font-weight: $bolder;
+
+  &__main {
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .page {
+    &__main {
+      width: 80vw;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .page {
+    &__main {
+      width: 60vw;
+      padding: 0;
+    }
+  }
+}

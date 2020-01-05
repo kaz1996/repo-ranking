@@ -1,0 +1,51 @@
+.details {
+  width: 50%;
+
+  &[open] {
+    .details__button::before {
+      content: '';
+      display: block;
+      background-color: $color-black;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      opacity: .3;
+    }
+
+    .select-menu {
+      @include menu-animation(.5s) {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+      }
+    }
+  }
+
+  &__button {
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-grey;
+    }
+  }
+
+  &__select-menu {
+    margin: auto;
+  }
+
+}
+
+@media screen and (min-width: 960px) {
+  .details {
+    position: relative;
+
+    &[open] {
+      .details__button::before {
+        background-color: transparent;
+      }
+    }
+  }
+}

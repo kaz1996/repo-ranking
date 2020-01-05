@@ -1,0 +1,8 @@
+.box-header {
+  display: flex;
+  justify-content: space-around;
+  font-weight: $bolder;
+  background-color: $color-light-green;
+  border-bottom: .1rem solid $color-light-grey;
+  border-radius: .5rem .5rem 0 0;
+}

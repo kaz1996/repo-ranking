@@ -1,0 +1,10 @@
+@mixin menu-animation($duration) {
+  $name: select-menu;
+
+  @keyframes #{$name} {
+    @content;
+  }
+
+  animation-name: $name;
+  animation-duration: $duration;
+}

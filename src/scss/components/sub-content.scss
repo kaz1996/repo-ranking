@@ -1,0 +1,9 @@
+.sub-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    margin-right: 3rem;
+  }
+}

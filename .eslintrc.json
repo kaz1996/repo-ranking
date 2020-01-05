@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["airbnb-base"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "off",
+    "class-methods-use-this": "off",
+    "indent": ["error", 2, { "ignoredNodes": ["TemplateLiteral > *"] }],
+    "no-param-reassign": ["error", { "props": false }],
+    "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 3 }]
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Weekly Repositries Ranking</title>
+</head>
+<body class="page">
+
+  <header class="header page__header">
+    <h1 class="header__title">
+      <span class="header__github">
+        <i class="header__icon fab fa-github"></i>
+        GitHub
+      </span>
+      週間人気レポジトリTOP10</h1>
+  </header>
+
+  <main class="main page__main">
+    <div class="box" id="js-box">
+      <div class="box-header box__box-header">
+        <details class="details" id="js-lang-menu">
+          <summary class="details__button">
+            language:
+            <span id="js-language-label">Any</span>
+          </summary>
+          <div class="select-menu details__select-menu" role="menu">
+            <div class="select-menu__header">
+              <span class="select-menu__label">Select a language</span>
+              <button class="select-menu__close-button">x</button>
+            </div>
+            <div class="items select-menu__items" id="js-lang-buttons"">
+              <button class="items__button">Ruby</button>
+              <button class="items__button">JavaScript</button>
+              <button class="items__button">Python</button>
+              <button class="items__button">C</button>
+              <button class="items__button">C++</button>
+              <button class="items__button">C#</button>
+              <button class="items__button">Golang</button>
+              <button class="items__button">Rust</button>
+              <button class="items__button">Kotlin</button>
+              <button class="items__button">Java</button>
+              <button class="items__button">PHP</button>
+              <button class="items__button">Swift</button>
+              <button class="items__button">R</button>
+              <button class="items__button">HTML5</button>
+              <button class="items__button">CSS3</button>
+            </div>
+          </div>
+        </details>
+        <details class="details" id="js-frame-menu">
+          <summary class="details__button">
+            Framework:
+            <span id="js-topic-label">Any</span>
+          </summary>
+          <div class="select-menu details__select-menu" role="menu">
+            <div class="select-menu__header">
+              <span>Select a framework</span>
+              <button class="select-menu__close-button">x</button>
+            </div>
+            <div class="items select-menu__items" id="js-framework-buttons">
+              <button class="items__button">Angular</button>
+              <button class="items__button">React</button>
+              <button class="items__button">Vue</button>
+              <button class="items__button">wordpress</button>
+              <button class="items__button">Django</button>
+              <button class="items__button">Flask</button>
+              <button class="items__button">Ruby on Rail</button>
+              <button class="items__button">Laraevl</button>
+              <button class="items__button">cakePHP</button>
+              <button class="items__button">Spring</button>
+              <button class="items__button">Gin</button>
+              <button class="items__button">beeGo</button>
+              <button class="items__button">Rocket</button>
+              <button class="items__button">Ktor</button>
+              <button class="items__button">BootStrap</button>
+            </div>
+          </div>
+        </details>
+      </div>
+      <div id="js-repo-wrapper"></div>
+    </div>
+  </main>
+
+  <footer class="footer page__footer">
+    <p class="footer__copyright">©Kazuhide Nobehara 2019.</p>
+  </footer>
+</body>
+</html>

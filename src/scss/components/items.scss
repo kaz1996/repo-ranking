@@ -1,0 +1,27 @@
+.items {
+  height: 91%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  &__button {
+    @include button;
+    font-size: 1.6rem;
+    padding: 1.5rem 1rem;
+    border-top: 1px solid $color-dark-green;
+    background-color: $color-white-blue;
+    color: $color-grey;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $color-blue;
+      color: $color-white-smoke;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .items {
+    height: 90%;
+  }
+}

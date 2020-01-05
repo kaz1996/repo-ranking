@@ -1,0 +1,17 @@
+.box {
+  width: 100%;
+  border: .2rem solid $color-dark-green;
+  border-radius: .5rem;
+
+  &__box-header {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .box {
+    &__box-header {
+      padding: 2.5rem 1rem;
+    }
+  }
+}

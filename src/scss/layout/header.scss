@@ -1,0 +1,18 @@
+.header {
+  @include flex();
+  
+  &__title {
+    color: $color-tomato;
+    font-weight: $bolder;
+    text-align: center;
+  }
+
+  &__github {
+    display: block;
+  }
+
+  &__icon {
+    color: $color-black;
+  }
+}
+
